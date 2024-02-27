@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "LinkedIn Adblocker",
+    "description": "Blocking ads for LinkedIn.",
+    "version": "0.0.1",
+    "author": "Ajay",
+    "action": {
+        "default_title": "LinkedIn Adblocker"
+    },
+    "permissions": [
+        "tabs",
+        "webNavigation",
+        "scripting"
+    ],
+    "host_permissions":[
+        "https://www.linkedin.com/"
+    ],
+    "background": {
+        "service_worker": "background.js"
+        
+    }
+}
